@@ -49,6 +49,4 @@ Intuitively: a good reward model should "guide" the agent quickly toward a minim
 - This metric we propose aims to represent exactly that, and as we can see in the plots generated in this notebook, the $RewardModelEfficiencyScore$ is highest for `hacky_manhattan_rm`, then `hacky_rm`, and finally the least informative `basic_rm`, as we may intuitively suppose.
 
 ---
-![title](AUC_scores/basic_rm.png)
-![title](AUC_scores/hacky_rm.png)
-![title](AUC_scores/hacky_manhattan_rm.png)
+![title](AUC_scores/reward_model_scores_merged.png)
