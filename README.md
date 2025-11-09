@@ -1,5 +1,7 @@
 # Study of the impact of the reward model on the efficacy of learned policies
 
+![title](AUC_scores/reward_model_scores_merged.png)
+
 ## 1. Description of the goal and content of the notebook
 
 ### Goal (informal)
@@ -47,6 +49,3 @@ Intuitively: a good reward model should "guide" the agent quickly toward a minim
 - This score effectively represents how "fast" the q-learning algorithm reaches an optimal solution: as we increase the $\epsilon$ decay rate, the agent has less time to explore its environment, and a less efficient reward model would lead to sub-optimal solutions in this case, while a more informative reward model should still be able to guide the agent towards an optimal solution even under limited exploration time, thus leading to "quicker learning of better solutions".
 
 - This metric we propose aims to represent exactly that, and as we can see in the plots generated in this notebook, the $RewardModelEfficiencyScore$ is highest for `hacky_manhattan_rm`, then `hacky_rm`, and finally the least informative `basic_rm`, as we may intuitively suppose.
-
----
-![title](AUC_scores/reward_model_scores_merged.png)
